@@ -1,5 +1,21 @@
 [
   {
+    "description": "这是一个会返回cookies信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true",
+        "user_id": "pneumonoultramicroscopicsilicovolcanoconiosis_5498465486464654"
+
+      },
+      "headers": { "Content-Type": "text/plain; charset=GBK" },
+      "text": "恭喜你获得cookies信息成功"
+    }
+  },
+  {
     "description": "这是一个带cookies信息的post请求",
     "request": {
       "uri": "/post/with/cookies",
