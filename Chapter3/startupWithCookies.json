@@ -1,0 +1,41 @@
+[
+  {
+    "description": "这是一个带cookies信息的post请求",
+    "request": {
+      "uri": "/post/with/cookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "HuHansan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "HuHansan": "success",
+        "status": 1,
+        "text": "这是一个请求带有json数据和cookies信息的请求响应"
+      },
+      "headers": { "Content-Type": "text/plain; charset=GBK" }
+    }
+
+  },
+  {
+    "description": "这是一个带cookies信息的get请求",
+    "request": {
+      "uri": "/get/with/cookies",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "headers": { "Content-Type": "text/plain; charset=GBK" },
+      "text": "这是一个需要携带cookies信息才能访问的get请求"
+    }
+
+  }
+]
