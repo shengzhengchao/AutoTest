@@ -7,8 +7,7 @@
     },
     "response": {
       "cookies": {
-        "login": "true",
-        "user_id": "pneumonoultramicroscopicsilicovolcanoconiosis_5498465486464654"
+        "login": "true"
 
       },
       "headers": { "Content-Type": "text/plain; charset=GBK" },
@@ -33,7 +32,7 @@
       "json": {
         "HuHansan": "success",
         "status": 1,
-        "text": "这是一个请求带有json数据和cookies信息的请求响应"
+        "content": "这是一个请求带有json数据和cookies信息的请求响应"
       },
       "headers": { "Content-Type": "text/plain; charset=GBK" }
     }

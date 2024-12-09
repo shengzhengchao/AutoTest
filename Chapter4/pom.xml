@@ -33,6 +33,11 @@
             <version>6.9.10</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20170516</version>
+        </dependency>
 
     </dependencies>
 
