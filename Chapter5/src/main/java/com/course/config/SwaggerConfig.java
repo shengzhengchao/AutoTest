@@ -1,6 +1,5 @@
 package com.course.config;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -24,7 +23,7 @@ public class SwaggerConfig {
                 .build();
     }
 
-    private ApiInfo apiInfo(){
+    private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title("我的接口文档")
                 .contact(new Contact("scc", "", "shenchaoc6@126.com"))
                 .description("这是我的swaggerUI生成的文档")
