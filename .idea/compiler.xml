@@ -23,14 +23,14 @@
       <module name="Chapter5" target="8" />
       <module name="Chapter6" target="8" />
       <module name="Chapter7" target="8" />
-      <module name="Chapter8" target="8" />
+      <module name="Chapter8" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Chapter5" options="-parameters" />
       <module name="Chapter6" options="-parameters" />
-      <module name="Chapter8" options="-parameters" />
+      <module name="Chapter8" options="-parameters -extdirs C:\Users\shenc\.ssh\workspace\muke\AutoTest\Chapter8/lib" />
     </option>
   </component>
 </project>

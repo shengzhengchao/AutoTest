@@ -1,5 +1,8 @@
 package com.course.model;
 
+import lombok.Data;
+
+@Data
 public class AddUserCase {
     private int id;
     private String userName;
@@ -9,4 +12,18 @@ public class AddUserCase {
     private String permission;
     private String isDelete;
     private String expected;
+
+    @Override
+    public String toString() {
+        return "AddUserCase{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", sex='" + sex + '\'' +
+                ", age='" + age + '\'' +
+                ", permission='" + permission + '\'' +
+                ", isDelete='" + isDelete + '\'' +
+                ", expected='" + expected + '\'' +
+                '}';
+    }
 }

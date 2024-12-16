@@ -31,12 +31,13 @@ public class UserManager {
 
         int i = template.selectOne("login", user);
         Cookie cookie = new Cookie("login", "true");
-        response.addCookie(cookie);
         log.info("查询到的结果是: " + i);
         if (i == 1) {
+            response.addCookie(cookie);
             log.info("登录的用户是: " + user.getUserName());
             return true;
         } else {
+            log.info("登录用户不合法!");
             return false;
         }
     }
@@ -50,8 +51,10 @@ public class UserManager {
         }
         if(result > 0 ) {
             log.info("添加用户数量: " + result);
+            return true;
+        }else {
+            return false;
         }
-        return false;
     }
 
     @ApiOperation(value = "获取用户(列表)信息的接口", httpMethod = "POST")

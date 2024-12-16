@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="用户管理系统测试套件">
-    <test>
-
+    <test name="UserManageTest">
+        <classes>
+            <class name="com.course.cases.LoginTest"></class>
+            <class name="com.course.cases.AddUserTest"></class>
+            <class name="com.course.cases.UpdateUserInfoTest"></class>
+            <class name="com.course.cases.GetUserInfoTest"></class>
+            <class name="com.course.cases.GetUserListTest"></class>
+        </classes>
     </test>
+
+    <listeners>
+        <!--        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+        <listener class-name="com.course.config.ExtendTestNGIReporterListenerNew"/>
+    </listeners>
 </suite>
