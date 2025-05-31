@@ -1,0 +1,28 @@
+[
+  {
+    "description": "模拟一个没有参数的get请求",
+    "request": {
+      "uri": "/getDemo",
+      "method": "get"
+    },
+    "response": {
+      "headers": { "Content-Type": "text/plain; charset=GBK" },
+      "text": "这是一个没有参数的get请求"
+    }
+  },
+  {
+    "description": "模拟一个带参数的get请求",
+    "request": {
+      "uri": "/getWithParam",
+      "method": "get",
+      "queries": {
+        "name": "HuHansan",
+        "age": 18
+      }
+    },
+    "response": {
+      "headers": { "Content-Type": "text/plain; charset=GBK" },
+      "text": "我胡汉三又回来了!"
+    }
+  }
+]
