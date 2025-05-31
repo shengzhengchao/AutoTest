@@ -21,6 +21,7 @@ public class UpdateUserInfoTest {
     public void updateUserInfo() throws IOException {
         SqlSession session = DataBaseUtil.getSqlSession();
         UpdateUserInfoCase updateUserInfoCase = session.selectOne("updateUserInfoCase", 1);
+        System.out.println(System.getProperty("file.encoding"));
         System.out.println("获取到的更新用户信息用例数据: " + updateUserInfoCase.toString());
         System.out.println("更行用户信息的用例的url为: " + TestConfig.updateUserInfoUrl);
 
@@ -37,6 +38,7 @@ public class UpdateUserInfoTest {
     public void deleteUser() throws IOException {
         SqlSession session = DataBaseUtil.getSqlSession();
         UpdateUserInfoCase updateUserInfoCase = session.selectOne("updateUserInfoCase", 2);
+        System.out.println(System.getProperty("file.encoding"));
         System.out.println("获取到的删除用户信息用例数据: " + updateUserInfoCase.toString());
         System.out.println("删除用户信息的用例的url为: " + TestConfig.updateUserInfoUrl);
 

@@ -22,7 +22,8 @@ public class AddUserTest {
         //获取测试数据
         SqlSession session = DataBaseUtil.getSqlSession();
         AddUserCase addUserCase = session.selectOne("addUserCase", 1);
-        System.out.println("获取到的getUserLIstCase用例数据: " + addUserCase.toString());
+        System.out.println(System.getProperty("file.encoding"));
+        System.out.println("获取到的addUserCase用例数据: " + addUserCase.toString());
         System.out.println("addUserCase用例的url为: " + TestConfig.addUserUrl);
 
         //发请求获取结果
@@ -32,7 +33,7 @@ public class AddUserTest {
         session.close();
 
         session = DataBaseUtil.getSqlSession();
-//        Thread.sleep(3000);
+//        Thread.sleep(10000);
         User user = session.selectOne("addUser", addUserCase);
         System.out.println(user.toString());
         Assert.assertEquals(addUserCase.getExpected(), result);

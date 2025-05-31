@@ -26,7 +26,7 @@ public class GetUserListTest {
         SqlSession session = DataBaseUtil.getSqlSession();
         GetUserListCase getUserListCase = session.selectOne("getUserListCase", 1);
         System.out.println("获取到的getUserLIstCase用例数据: " + getUserListCase.toString());
-        System.out.println("getUserLIstCase用例的url为: " + TestConfig.getUserListUrl);
+        System.out.println("getUserListCase用例的url为: " + TestConfig.getUserListUrl);
 
         //发送请求获取结果
         JSONArray resultJson = getJsonResult(getUserListCase);

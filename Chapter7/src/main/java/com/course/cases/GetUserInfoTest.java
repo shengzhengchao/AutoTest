@@ -27,6 +27,7 @@ public class GetUserInfoTest {
     public void getUserInfo() throws IOException{
         SqlSession session = DataBaseUtil.getSqlSession();
         GetUserInfoCase getUserInfoCase = session.selectOne("getUserInfoCase", 1);
+        System.out.println(System.getProperty("file.encoding"));
         System.out.println("获取到的getUserInfoCase用例数据: " + getUserInfoCase.toString());
         System.out.println("GetUserInfoCase用例的url为: " + TestConfig.getUserInfoUrl);
 

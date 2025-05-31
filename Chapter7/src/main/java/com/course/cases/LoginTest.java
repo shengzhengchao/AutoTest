@@ -34,6 +34,7 @@ public class LoginTest {
     public void loginTrue() throws IOException {
         SqlSession session = DataBaseUtil.getSqlSession();
         LoginCase loginCase = session.selectOne("loginCase", 1);
+        System.out.println(System.getProperty("file.encoding"));
         System.out.println("取到的loginCase对象为: " + loginCase.toString());
         System.out.println("登录的loginUrl为: " + TestConfig.loginUrl);
 
